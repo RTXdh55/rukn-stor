@@ -1,1 +1,183 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#344536">
+<meta name="description" content="ركن — اختيارات عملية للبيت والحياة اليومية">
+<title>ركن | كل اللي تحتاجه بمكان واحد</title>
+<style>
+:root{--g:#344536;--g2:#52664f;--cream:#f7f4ec;--paper:#fffdf8;--ink:#20251f;--muted:#70776e;--line:#e7e2d7}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.7}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+.wrap{width:min(1120px,92%);margin:auto}
+header{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:74px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.5rem;color:var(--g)}
+.mark{display:grid;place-items:center;width:42px;height:42px;background:var(--g);color:white;border-radius:13px;font-size:1.4rem}
+.links{display:flex;gap:22px;color:#50574f}
+.cart{border:1px solid var(--line);background:white;border-radius:999px;padding:8px 14px}
+.hero{padding:58px 0 42px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
+.eyebrow{display:inline-block;color:var(--g2);background:#e8ecdf;padding:5px 12px;border-radius:999px;font-size:.85rem;font-weight:700}
+h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.25;margin:18px 0;color:var(--g)}
+.lead{font-size:1.1rem;color:var(--muted);max-width:590px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:12px;padding:12px 20px;font-weight:700;border:1px solid var(--g)}
+.primary{background:var(--g);color:white}
+.secondary{color:var(--g)}
+.hero-art{min-height:320px;border-radius:28px;background:linear-gradient(145deg,#e7e9d9,#d9c8a4);display:grid;place-items:center;position:relative;overflow:hidden}
+.sun{width:210px;height:210px;background:#f7f0dc;border-radius:50%;position:absolute;top:30px;left:34px}
+.arch{width:190px;height:245px;border-radius:100px 100px 18px 18px;background:var(--g2);position:absolute;bottom:-18px;right:22%}
+.vase{position:absolute;bottom:30px;left:22%;font-size:6rem;filter:drop-shadow(0 12px 7px #0002)}
+.art-note{position:absolute;bottom:20px;right:20px;background:#fffdf0e8;border-radius:14px;padding:10px 14px;font-weight:700;color:var(--g)}
+section{padding:32px 0 46px}
+.section-head{margin-bottom:22px}
+h2{margin:0;color:var(--g);font-size:1.8rem}
+.section-head p{margin:5px 0 0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.product-art{height:180px;display:grid;place-items:center;font-size:4.2rem;background:linear-gradient(135deg,#e8e9dc,#f2e6cf)}
+.card:nth-child(2) .product-art{background:linear-gradient(135deg,#e0e7e1,#c6d2c3)}
+.card:nth-child(3) .product-art{background:linear-gradient(135deg,#f0e1d8,#e4c8b7)}
+.card-body{padding:17px}
+.card h3{margin:0 0 5px}
+.card p{margin:0;color:var(--muted);font-size:.93rem}
+.tag{display:inline-block;margin-top:13px;color:var(--g2);font-size:.82rem;font-weight:700}
+.notice{margin:14px 0 0;color:var(--muted);font-size:.88rem}
+.about{background:#e9ecdf;border-radius:24px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}
+.about p{color:#5c6659}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.benefit{background:#ffffffa6;border-radius:15px;padding:15px;text-align:center;font-weight:700;color:var(--g)}
+.contact{background:var(--g);color:white;border-radius:24px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.contact h2{color:white}
+.contact p{color:#e1e7dc}
+.contact .btn{background:var(--paper);border-color:var(--paper);color:var(--g)}
+footer{padding:24px 0;color:var(--muted);font-size:.9rem}
+.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:18px}
+@media(max-width:760px){
+.links{display:none}
+.hero{padding-top:35px}
+.hero-grid{grid-template-columns:1fr}
+.hero-art{min-height:250px}
+.grid{grid-template-columns:1fr}
+.product-art{height:150px}
+.about{grid-template-columns:1fr}
+.benefits{grid-template-columns:1fr}
+.contact{align-items:flex-start;flex-direction:column}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap nav">
+<a class="brand" href="#"><span class="mark">ر</span><span>رُكن</span></a>
+<nav class="links">
+<a href="#categories">الأقسام</a>
+<a href="#about">عن ركن</a>
+<a href="#contact">تواصل معنا</a>
+</nav>
+<button class="cart" id="cartBtn">🛍️ السلة <span>0</span></button>
+</div>
+</header>
 
+<main>
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<span class="eyebrow">أهلاً بيكم في ركن</span>
+<h1>كل اللي تحتاجه،<br>بمكان واحد.</h1>
+<p class="lead">اختيارات عملية وأفكار حلوة للبيت والحياة اليومية. اكتشفوا ركن، وخلي اختياركم أسهل.</p>
+<div class="actions">
+<a class="btn primary" href="#categories">اكتشف الأقسام</a>
+<a class="btn secondary" href="#about">تعرف على ركن</a>
+</div>
+</div>
+<div class="hero-art">
+<div class="sun"></div>
+<div class="arch"></div>
+<div class="vase">🏺</div>
+<div class="art-note">اختيارات تستاهلها ✨</div>
+</div>
+</div>
+</section>
+
+<section id="categories">
+<div class="wrap">
+<div class="section-head">
+<h2>تصفّحوا الأقسام</h2>
+<p>بداية بسيطة لعالم ركن — نضيف المنتجات الحقيقية لاحقاً.</p>
+</div>
+<div class="grid">
+<article class="card">
+<div class="product-art">🏡</div>
+<div class="card-body">
+<h3>للبيت</h3>
+<p>أفكار وإضافات تخلي البيت أرتب وأجمل.</p>
+<span class="tag">قسم تجريبي</span>
+</div>
+</article>
+<article class="card">
+<div class="product-art">🧺</div>
+<div class="card-body">
+<h3>للحياة اليومية</h3>
+<p>مستلزمات عملية تساعدكم بتفاصيل يومكم.</p>
+<span class="tag">قسم تجريبي</span>
+</div>
+</article>
+<article class="card">
+<div class="product-art">🎁</div>
+<div class="card-body">
+<h3>هدايا واختيارات</h3>
+<p>أفكار بسيطة للمناسبات والناس الغالين.</p>
+<span class="tag">قسم تجريبي</span>
+</div>
+</article>
+</div>
+<p class="notice">هذه نسخة أولية للواجهة فقط، ولا تستقبل الطلبات أو الدفع. تُضاف المنتجات والأسعار وطرق التوصيل بعد تأكيد تفاصيلها.</p>
+</div>
+</section>
+
+<section id="about">
+<div class="wrap about">
+<div>
+<h2>ركن — اختيارك بكل بساطة</h2>
+<p>نريد أن يكون ركن مكاناً سهلاً وواضحاً لاكتشاف منتجات مفيدة للبيت والحياة اليومية، مع معلومات دقيقة قبل الشراء.</p>
+</div>
+<div class="benefits">
+<div class="benefit">اختيارات عملية</div>
+<div class="benefit">عرض واضح</div>
+<div class="benefit">تجربة سهلة</div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="wrap contact">
+<div>
+<h2>تابعونا لاكتشاف الجديد</h2>
+<p>روابط التواصل والطلبات تُضاف بعد تزويدنا بحسابات ركن الرسمية.</p>
+</div>
+<a class="btn" href="https://github.com/RTXdh55/rukn-stor">ملفات المشروع على GitHub</a>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap foot">
+<span>© <span id="year"></span> ركن — جميع الحقوق محفوظة</span>
+<span>نسخة أولية لمتجر ركن</span>
+</div>
+</footer>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('cartBtn').addEventListener('click',()=>{
+alert('السلة حالياً تجريبية. نفعّل الطلبات بعد إضافة المنتجات ووسيلة التواصل.');
+});
+</script>
+</body>
+</html>
